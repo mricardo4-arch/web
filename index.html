@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mi Rincón en la Web</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fuentes opcionales -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-3">
+        <!-- EDITA: sustituye src por la URL de tu foto o ilustración -->
+        <img id="foto-perfil" src="assets/placeholder-avatar.png" alt="" width="64" height="64" class="rounded-circle border border-2 border-white">
+        <div>
+          <h1 class="h4 mb-0">Moises Emiliano Ricardo Lizama</h1> <!-- EDITA: tu nombre/apodo -->
+          <p class="small mb-0 opacity-75">Aprendiendo todo es posible</p> <!-- EDITA: frase -->
+        </div>
+      </div>
+
+      <!-- NAV -->
+      <nav aria-label="Navegación principal">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- SECCIÓN PRINCIPAL / BIENVENIDA -->
+    <section id="sobre-mi" class="py-5">
+      <div class="container">
+        <article class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="display-6">¡Bienvenido a mi rincón!</h2>
+            <p class="lead">Hola, soy <strong>Moises Emiliano Ricardo Lizama</strong>. <!-- presentación corta -->
+              Me apasiona el desarrollo web, el arte, los videojuegos, la musica y leer. Aquí comparto mis proyectos, habilidades y cómo contactarme si necesitas ayuda o alguna duda que resolver.</p>
+          </div>
+
+          <aside class="col-lg-6 text-center">
+            <img src="assets/hero-placeholder.png" alt="Imagen principal" class="img-fluid rounded shadow-sm">
+            <p class="small text-muted mt-2">Una imagen que represente tu tema.</p>
+          </aside>
+        </article>
+      </div>
+    </section>
+
+    <!-- HABILIDADES / PODERES -->
+    <section id="habilidades" class="py-5 bg-light">
+      <div class="container">
+        <header class="mb-4">
+          <h3>Habilidades / Poderes</h3>
+          <p class="text-muted">Lista creativa de lo que dominas.</p>
+        </header>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Desarrollo Web</h5>
+                <p class="card-text">HTML5 semántico, CSS, un poco de JavaScript.</p>
+                <!-- porcentajes  -->
+                <div class="mb-2"><small class="text-muted">Maestria</small></div>
+                <div class="progress" style="height:10px;">
+                  <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Diseño</h5>
+                <p class="card-text">Composición y tipografía.</p>
+                <div class="mb-2"><small class="text-muted">Creatividad</small></div>
+                <div class="progress" style="height:10px;">
+                  <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Comunicación</h5>
+                <p class="card-text">Trabajo en equipo, presentaciones y documentación.</p>
+                <div class="mb-2"><small class="text-muted">Soft Skills</small></div>
+                <div class="progress" style="height:10px;">
+                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROYECTOS / MISIONES -->
+    <section id="proyectos" class="py-5">
+      <div class="container">
+        <header class="mb-4">
+          <h3>Proyectos / Misiones</h3>
+          <p class="text-muted">Algunas de las misiones que he completado (o estoy desarrollando).</p>
+        </header>
+
+        <!-- GRID DE PROYECTOS -->
+        <div class="row g-4">
+          <div class="col-md-6">
+            <article class="card h-100">
+              <div class="row g-0 align-items-center">
+                <div class="col-4">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbcM6WLodIlYIX3EZeG7Q_hXSuA7TANj_2-g&s" alt="Miniatura proyecto 1" class="img-fluid rounded-start">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Planta Robotica</h5>
+                    <p class="card-text">Proyecto en desarrolo que es la atomaticacion de un indicador de cundo una palta esta saludable mediante sensores</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO / CONEXIÓN -->
+    <section id="contacto" class="py-5 bg-light">
+      <div class="container">
+        <header class="mb-4">
+          <h3>Contacto</h3>
+          <p class="text-muted">¿Quieres hablar de una misión? Contáctame.</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- FORMULARIO (envío por GitHub Pages requiere servicio externo; aquí solo estructura) -->
+            <form id="form-contacto" class="card p-3" novalidate>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo</label>
+                <input type="email" id="correo" class="form-control" placeholder="tucorreo@ejemplo.com" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea id="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+              </div>
+
+              <!-- EDITA: si quieres conectar con Formspree, Netlify Forms u otro, pega aquí el action / integración -->
+              <button type="submit" class="btn btn-success">Enviar mensaje</button>
+              <small class="form-text text-muted mt-2">También puedes escribirme a: <a href="mailto:mricardo4@ucol.mx">mricardo4@ucol.mx</a></small>
+            </form>
+          </div>
+
+          <aside class="col-lg-6">
+            <div class="card p-3 h-100">
+              <h5>Encuéntrame en</h5>
+              <ul class="list-unstyled">
+                <li>GitHub: <a href="https://github.com/mricardo4-arch" target="_blank" rel="noopener">mricardo4-arch</a></li> 
+            
+              </ul>
+
+              <hr>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-0 small">© <span id="anio"></span> Moises Emiliano Ricardo Lizama — Mi Rincón en la Web</p>
+      <p class="mb-0 small">Hecho con ❤️ y HTML5 semántico</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>
